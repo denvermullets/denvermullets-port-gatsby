@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import ViewProjects from "../buttons/ViewProjects"
 import { H1, MediumText } from "../styles/TextStyles"
 
 export default function HeroSection() {
@@ -12,6 +13,7 @@ export default function HeroSection() {
             I'm a software engineer, designer and photographer. I love working
             with Javascript, Ruby, and React.
           </Description>
+          <ViewProjects title="My Projects" />
         </TextWrapper>
       </ContentWrapper>
     </Wrapper>
@@ -38,6 +40,7 @@ const Title = styled(H1)`
   color: white;
 `
 const Description = styled(MediumText)`
+  color: white;
   font-size: 17px;
   line-height: 130%;
 `
