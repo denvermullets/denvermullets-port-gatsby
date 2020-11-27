@@ -24,15 +24,26 @@ const Wrapper = styled.div`
   width: 200px;
   height: 61px;
   /* padding: 12px; */
-  padding: 10px;
+  padding: 8px;
   background: linear-gradient(220.46deg, #06efb1 3.63%, #15ade0 96.85%);
-  box-shadow: 0px 5px 10px rgba(9, 228, 186, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 1px 3px rgba(255, 255, 255, 0.1),
+    inset 0px 0px 0px 0.5px rgba(0, 255, 206, 0.63);
   border-radius: 18px;
   gap: 5px;
 
   display: grid;
   grid-template-columns: 53px auto;
   align-items: center;
+
+  transition: 0.4s cubic-bezier(0.21, 0.61, 0.35, 1);
+
+  :hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      0px 15px 15px rgba(255, 255, 255, 0.05),
+      inset 0px 0px 0px 0.5px rgba(0, 255, 206, 0.63);
+    transform: translateY(-3px);
+  }
 `
 
 const Title = styled(Caption2)`
