@@ -75,7 +75,7 @@ const Wrapper = styled.div`
         rgba(6, 239, 177, 0.5) 3.63%,
         rgba(21, 173, 224, 0.5) 96.85%
       );
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(6px);
     /* Note: backdrop-filter has minimal browser support */
 
     border-radius: 5px;
