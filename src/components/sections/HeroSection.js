@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import MockupAnimation from "../animations/MockupAnimation"
 import ViewProjects from "../buttons/ViewProjects"
 import { H1, MediumText } from "../styles/TextStyles"
 
@@ -15,6 +16,7 @@ export default function HeroSection() {
           </Description>
           <ViewProjects title="My Projects" />
         </TextWrapper>
+        <MockupAnimation />
       </ContentWrapper>
     </Wrapper>
   )
@@ -22,12 +24,16 @@ export default function HeroSection() {
 
 const Wrapper = styled.div`
   background: #292929;
+  overflow: hidden;
 `
 // margin: top/bottom left/right
 const ContentWrapper = styled.div`
   max-width: 1234px;
   margin: 0 auto;
   padding: 200px 30px;
+
+  display: grid;
+  grid-template-columns: 360px auto;
 `
 
 // css grid using gap instead of margins provides extra flexibility for mobile
