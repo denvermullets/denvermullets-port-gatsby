@@ -11,8 +11,8 @@ export default function HeroSection() {
         <TextWrapper>
           <Title>Hi. I'm Ryan.</Title>
           <Description>
-            I'm a software engineer, designer and photographer. I love working
-            with Javascript, Ruby, and React.
+            I'm a fullstack developer, designer and photographer. I love working
+            with <br /> Javascript, Ruby, and React.
           </Description>
           <ViewProjects title="My Projects" />
         </TextWrapper>

@@ -18,8 +18,8 @@ const Wrapper = styled.div`
 
   // select all div elements to transform
   div {
-    transform: rotateY(-10deg) rotateX(20deg);
-    transform-origin: bottom left;
+    transform: rotateY(15deg) rotateX(15deg) rotateZ(-1deg);
+    transform-origin: top left;
   }
 
   * {
@@ -35,7 +35,7 @@ const Wrapper = styled.div`
     }
     &.chrome {
       transition-delay: 0.2s;
-      transform: translate(-45px, 20px);
+      transform: translate(-75px, 20px);
     }
 
     :hover {
@@ -66,14 +66,14 @@ const Wrapper = styled.div`
     position: absolute;
     width: 580px;
     height: 357.37px;
-    left: 120px;
-    top: 54px;
+    left: 134px;
+    top: 36px;
 
     background: url("/images/animations/chrome.svg"),
       linear-gradient(
         220.46deg,
         rgba(6, 239, 177, 0.5) 3.63%,
-        rgba(21, 173, 224, 0.5) 96.85%
+        rgba(21, 173, 224, 0.35) 96.85%
       );
     backdrop-filter: blur(6px);
     /* Note: backdrop-filter has minimal browser support */
