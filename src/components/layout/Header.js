@@ -24,7 +24,7 @@ export default function Header() {
 
 const Wrapper = styled.div`
   position: absolute;
-  top: 60px;
+  top: 45px;
   display: grid;
   grid-template-columns: 44px auto;
   width: 100%;

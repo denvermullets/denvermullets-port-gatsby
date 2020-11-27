@@ -34,7 +34,7 @@ const Wrapper = styled.div`
       transition-delay: 0.05s;
     }
     &.chrome {
-      transition-delay: 0.2s;
+      transition-delay: 0.15s;
       transform: translate(-75px, 20px);
     }
 
