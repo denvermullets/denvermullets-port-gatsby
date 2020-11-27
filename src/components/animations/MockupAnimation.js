@@ -13,6 +13,35 @@ export default function MockupAnimation() {
 
 const Wrapper = styled.div`
   position: relative;
+  perspective: 5000;
+  /* perspective-origin: top left; */
+
+  // select all div elements to transform
+  div {
+    transform: rotateY(-10deg) rotateX(20deg);
+    transform-origin: bottom left;
+  }
+
+  * {
+    transition: 2.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  // select all div's hover state
+  :hover div {
+    transform: rotateY(0deg) rotateX(0deg);
+    /* & is selecting self, so parent div node then we select each classname */
+    &.vscode {
+      transition-delay: 0.05s;
+    }
+    &.chrome {
+      transition-delay: 0.2s;
+      transform: translate(-45px, 20px);
+    }
+
+    :hover {
+      filter: brightness(108%) saturate(110%);
+    }
+  }
 
   .vscode {
     position: absolute;
@@ -54,12 +83,12 @@ const Wrapper = styled.div`
 
   .light {
     position: absolute;
-    width: 345px;
+    width: 453px;
     height: 162px;
-    left: 212px;
+    left: 104px;
     top: 111px;
 
-    background: rgba(255, 255, 255, 0.35);
-    filter: blur(115px);
+    background: rgba(255, 255, 255, 0.55);
+    filter: blur(35px);
   }
 `
