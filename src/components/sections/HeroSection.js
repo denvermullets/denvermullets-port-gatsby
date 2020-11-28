@@ -1,12 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 import MockupAnimation from "../animations/MockupAnimation"
+import WavyLines from "../backgrounds/WavyLines"
 import ViewProjects from "../buttons/ViewProjects"
 import { H1, MediumText } from "../styles/TextStyles"
 
 export default function HeroSection() {
   return (
     <Wrapper>
+      <WavyLines />
       <ContentWrapper>
         <TextWrapper>
           <Title>Hi. I'm Ryan.</Title>
@@ -23,7 +25,6 @@ export default function HeroSection() {
 }
 
 const Wrapper = styled.div`
-  background: #292929;
   overflow: hidden;
 `
 // margin: top/bottom left/right
@@ -31,6 +32,7 @@ const ContentWrapper = styled.div`
   max-width: 1234px;
   margin: 0 auto;
   padding: 175px 30px;
+  padding-bottom: 600px;
 
   display: grid;
   grid-template-columns: 425px auto;

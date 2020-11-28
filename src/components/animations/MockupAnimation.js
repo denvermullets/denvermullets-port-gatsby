@@ -46,7 +46,7 @@ const Wrapper = styled.div`
   .vscode {
     position: absolute;
     width: 580px;
-    height: 357.37px;
+    height: 357px;
     left: 0px;
     top: 0px;
 
@@ -65,7 +65,7 @@ const Wrapper = styled.div`
   .chrome {
     position: absolute;
     width: 580px;
-    height: 357.37px;
+    height: 357px;
     left: 134px;
     top: 36px;
 
@@ -75,7 +75,7 @@ const Wrapper = styled.div`
         rgba(6, 239, 177, 0.5) 3.63%,
         rgba(21, 173, 224, 0.35) 96.85%
       );
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(3px);
     /* Note: backdrop-filter has minimal browser support */
 
     border-radius: 5px;
