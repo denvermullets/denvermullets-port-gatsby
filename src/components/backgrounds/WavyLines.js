@@ -27,7 +27,7 @@ const Wave = styled.img`
 
   /* any size larger than this and you'll see ends of svg path so let's move it over */
   @media only screen and (min-width: 1650px) {
-    left: 0%;
+    left: -2%;
   }
 `
 const Background = styled.div`

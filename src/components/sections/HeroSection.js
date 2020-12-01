@@ -32,7 +32,7 @@ const ContentWrapper = styled.div`
   max-width: 1234px;
   margin: 0 auto;
   padding: 175px 30px;
-  padding-bottom: 600px;
+  padding-bottom: 375px;
 
   display: grid;
   grid-template-columns: 425px auto;
