@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import { Caption2 } from "../styles/TextStyles"
@@ -7,16 +6,22 @@ import { Caption2 } from "../styles/TextStyles"
 // have flexibility when we want to animate elements separately in the button
 export default function LiveDemo(props) {
   return (
-    <Link to="/page-2">
+    // <Link to={props.url}>
+    <a href={props.url} target="_blank" rel="noreferrer">
       <Wrapper>
         <IconWrapper>
           <Icon src="/images/icons/browser.svg" />
         </IconWrapper>
         <Title>{props.title}</Title>
       </Wrapper>
-    </Link>
+      {/* </Link> */}
+    </a>
   )
 }
+
+// TODO: need to have props pass down if a button should exist or not
+// since we're hard coding the 3 columns we should set a button to be disabled if
+// there's no url provided for a 'Live Demo'
 
 // wrapper is basic button styling
 // grid template columns takes each column size, currently only 2 columns

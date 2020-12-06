@@ -6,23 +6,21 @@ import RepoBtn from "../buttons/RepoBtn"
 import SiteImage from "../animations/SiteImage"
 
 // we're going to take in props w/all the information
-export default function Project() {
+export default function Project(props) {
+  const { title, bio, front, back, image, url } = props
   return (
     <Wrapper>
       <ContentWrapper>
         <TextWrapper>
-          <Title>Wax Chromatics.</Title>
-          <Description>
-            Vinyl record collection management app that utilizes the Discogs
-            API, OAuth, React.js, and Ruby on Rails.
-          </Description>
+          <Title>{title}</Title>
+          <Description>{bio}</Description>
           <ButtonGrid>
-            <LiveDemo title="Demo" />
-            <RepoBtn title="Frontend" />
-            <RepoBtn title="Backend" />
+            {url ? <LiveDemo title="Demo" url={url} /> : null}
+            <RepoBtn title="Frontend" url={front} />
+            {back ? <RepoBtn title="Backend" url={back} /> : null}
           </ButtonGrid>
         </TextWrapper>
-        <SiteImage url="/images/animations/waxchromatics.png" />
+        <SiteImage url={image} />
       </ContentWrapper>
     </Wrapper>
   )

@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import { Caption2 } from "../styles/TextStyles"
@@ -7,14 +6,14 @@ import { Caption2 } from "../styles/TextStyles"
 // have flexibility when we want to animate elements separately in the button
 export default function RepoBtn(props) {
   return (
-    <Link to="/page-2">
+    <a href={props.url} target="_blank" rel="noreferrer">
       <Wrapper>
         <IconWrapper>
           <Icon src="/images/icons/browser.svg" />
         </IconWrapper>
         <Title>{props.title}</Title>
       </Wrapper>
-    </Link>
+    </a>
   )
 }
 
