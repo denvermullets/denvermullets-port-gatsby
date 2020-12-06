@@ -7,7 +7,7 @@ import { Caption2 } from "../styles/TextStyles"
 // have flexibility when we want to animate elements separately in the button
 export default function ViewProjects(props) {
   return (
-    <Link to="/page-2">
+    <Link to="#">
       <Wrapper>
         <IconWrapper>
           <Icon src="/images/icons/squares.svg" />
