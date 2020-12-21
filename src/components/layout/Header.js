@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import { menuData } from "../../data/menuData"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 export default function Header() {
   return (
@@ -12,9 +13,9 @@ export default function Header() {
         </Link>
         <MenuWrapper>
           {menuData.map((item, index) => (
-            <Link to={item.link} key={index}>
+            <AnchorLink to={item.link} key={index}>
               <MenuItem>{item.title}</MenuItem>
-            </Link>
+            </AnchorLink>
           ))}
         </MenuWrapper>
       </Wrapper>

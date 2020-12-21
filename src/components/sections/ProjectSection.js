@@ -5,7 +5,7 @@ import { portfolio } from "../../data/portfolioData"
 
 export default function ProjectSection() {
   return (
-    <Wrapper>
+    <Wrapper id="projects">
       {portfolio.map((port, index) => (
         <Project
           title={port.name}

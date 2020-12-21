@@ -1,20 +1,20 @@
-import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import { Caption2 } from "../styles/TextStyles"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 // we're utilizing css grid to handle alignment inside the button which lets us
 // have flexibility when we want to animate elements separately in the button
 export default function ViewProjects(props) {
   return (
-    <Link to="#">
+    <AnchorLink to="/#projects">
       <Wrapper>
         <IconWrapper>
           <Icon src="/images/icons/squares.svg" />
         </IconWrapper>
         <Title>{props.title}</Title>
       </Wrapper>
-    </Link>
+    </AnchorLink>
   )
 }
 

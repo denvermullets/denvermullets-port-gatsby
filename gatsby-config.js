@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `@denvermullets | Ryan Vaznis`,
+    title: `Ryan Vaznis`,
     description: `Ryan Vaznis / denvermullets full stack developer portfolio page`,
     author: `@denvermullets`,
   },
@@ -14,6 +14,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -10,
+        duration: 1000,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

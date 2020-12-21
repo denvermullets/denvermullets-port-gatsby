@@ -7,7 +7,7 @@ import ProjectSection from "../components/sections/ProjectSection"
 function IndexPage() {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="@denvermullets" />
       <HeroSection />
       <ProjectSection />
     </Layout>
