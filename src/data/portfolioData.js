@@ -11,10 +11,9 @@ export const portfolio = [
   {
     name: "Joberino",
     bio:
-      "A job scraper that pulls from LinkedIn, BuiltInNyc and Indeed from the last 24hrs and adds them to a Postgresql database while avoiding duplicates based on company and job title. Pulls LinkedIn data by logging in as you and having Capybara navigate behind the scenes.",
-    website: "https://github.com/denvermullets/joberino-portal-api",
-    frontend: "https://github.com/denvermullets/joberino-portal-frontend",
-    backend: "https://github.com/denvermullets/joberino-portal-api",
+      "A Ruby on Rails job scraper that uses LinkedIn and BuiltInNyc to list jobs from the last 24hrs while avoiding duplicates based on company and job title. Pulls LinkedIn data by logging in as you and having Selenium navigate behind the scenes.",
+    website: "https://joberino.dev",
+    frontend: "https://github.com/denvermullets/joberino",
     image: "/images/animations/joberino.png",
   },
   {
