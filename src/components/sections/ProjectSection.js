@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import Project from "../projects/Project"
-import { portfolio } from "../../data/portfolioData"
+import React from "react";
+import styled from "styled-components";
+import Project from "../projects/Project";
+import { portfolio } from "../../data/portfolioData";
 
 export default function ProjectSection() {
   return (
@@ -15,12 +15,14 @@ export default function ProjectSection() {
           image={port.image}
           url={port.website}
           key={index}
+          buttonTitle={port.buttonTitle}
         />
       ))}
     </Wrapper>
-  )
+  );
 }
+
 const Wrapper = styled.div`
   background: #292929;
   width: 100%;
-`
+`;

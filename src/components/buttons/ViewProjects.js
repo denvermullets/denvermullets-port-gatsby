@@ -23,7 +23,6 @@ export default function ViewProjects(props) {
 const Wrapper = styled.div`
   width: 200px;
   height: 61px;
-  /* padding: 12px; */
   padding: 8px;
   background: linear-gradient(220.46deg, #06efb1 3.63%, #15ade0 96.85%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
