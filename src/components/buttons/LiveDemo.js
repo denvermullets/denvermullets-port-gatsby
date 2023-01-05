@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import { Caption2 } from "../styles/TextStyles"
+import React from "react";
+import styled from "styled-components";
+import { Caption2 } from "../styles/TextStyles";
 
 // we're utilizing css grid to handle alignment inside the button which lets us
 // have flexibility when we want to animate elements separately in the button
@@ -16,7 +16,7 @@ export default function LiveDemo(props) {
       </Wrapper>
       {/* </Link> */}
     </a>
-  )
+  );
 }
 
 // TODO: need to have props pass down if a button should exist or not
@@ -26,7 +26,7 @@ export default function LiveDemo(props) {
 // wrapper is basic button styling
 // grid template columns takes each column size, currently only 2 columns
 const Wrapper = styled.div`
-  width: 100px;
+  width: auto;
   height: 41px;
   padding: 2px;
   background: linear-gradient(220.46deg, #06efb1 3.63%, #15ade0 96.85%);
@@ -47,18 +47,19 @@ const Wrapper = styled.div`
       inset 0px 0px 0px 0.5px rgba(0, 255, 206, 0.63);
     transform: translateY(-3px);
   }
-`
+`;
 
 const Title = styled(Caption2)`
   color: white;
-`
+  padding-right: 8px;
+`;
 const Icon = styled.img`
   width: 20px;
   height: 20px;
-`
+`;
 const IconWrapper = styled.div`
   display: grid;
   justify-content: center;
   justify-self: center;
   align-content: center;
-`
+`;
