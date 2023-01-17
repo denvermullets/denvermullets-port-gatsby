@@ -2,7 +2,7 @@ export const portfolio = [
   {
     name: "Collectable Moments",
     bio:
-      "A simple daily memory app built with Typescript, React, with a Rails API. Hosted on Netlify and a DigitalOcean droplet. Has CI/CD workflow with Semantic versioning for release notes utilizing Github Actions. Also, has an action to publish changes to Slack channel for collaboration.",
+      "A simple daily memory app built with Typescript, React, with a Rails API. Hosted on Netlify and a DigitalOcean droplet. Has CI/CD workflow with Semantic versioning for release notes utilizing Github Actions while using Cypress for testing. Also, has an action to publish changes to Slack channel for collaboration.",
     website: "https://collectablemoments.com",
     frontend: "https://github.com/denvermullets/collectable-moments",
     backend: "https://github.com/denvermullets/collectable-moments-api",
