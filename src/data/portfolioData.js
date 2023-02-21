@@ -12,7 +12,7 @@ export const portfolio = [
     name: "99 Staples",
     bio:
       "A Magic: The Gathering collection app built with Typescript, React, Ruby on Rails API. Hosted on Render using Sidekiq, REDIS, and a Postgresql database. A worker keeps the current database of cards up to date and also adds basic current pricing info. Has CI/CD actions to handle merging and generating release notes.",
-    website: "https://waxchromatics.com",
+    website: "https://99staples.com",
     frontend: "https://github.com/denvermullets/ninetynine-staples-front-end",
     backend: "https://github.com/denvermullets/ninetynine-staples",
     image: "/images/animations/99staples.png",
