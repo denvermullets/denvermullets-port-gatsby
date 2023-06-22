@@ -1,5 +1,23 @@
 export const portfolio = [
   {
+    name: "Basketball Timeline",
+    bio:
+      "NBA Lineup visualizer uitilizing data scraped via my Ruby on Rails API to show you the starting lineups thru the season. API uses a Sidekiq for initial ingestion of data. ",
+    website: "https://basketball-timeline.com/?team=PHO&year=2023",
+    frontend: "https://github.com/denvermullets/basketball-timeline-client",
+    backend: "https://github.com/denvermullets/basketball-timeline",
+    image: "/images/animations/basketball-timeline.png",
+  },
+  {
+    name: "99 Staples",
+    bio:
+      "A Magic: The Gathering collection app built with Typescript, React, Ruby on Rails API. Hosted on Render using Sidekiq, REDIS, and a Postgresql database. A worker keeps the current database of cards up to date and also adds basic current pricing info. Has CI/CD actions to handle merging and generating release notes.",
+    website: "https://www.99staples.com/collections/denvermullets/9",
+    frontend: "https://github.com/denvermullets/ninetynine-staples-front-end",
+    backend: "https://github.com/denvermullets/ninetynine-staples",
+    image: "/images/animations/99staples.png",
+  },
+  {
     name: "Collectable Moments",
     bio:
       "A simple daily memory app built with Typescript, React, with a Rails API. Hosted on Netlify and a DigitalOcean droplet. Has CI/CD workflow with Semantic versioning for release notes utilizing Github Actions while using Cypress for testing. Also, has an action to publish changes to Slack channel for collaboration.",
@@ -7,15 +25,6 @@ export const portfolio = [
     frontend: "https://github.com/denvermullets/collectable-moments",
     backend: "https://github.com/denvermullets/collectable-moments-api",
     image: "/images/animations/collectable-moments.png",
-  },
-  {
-    name: "99 Staples",
-    bio:
-      "A Magic: The Gathering collection app built with Typescript, React, Ruby on Rails API. Hosted on Render using Sidekiq, REDIS, and a Postgresql database. A worker keeps the current database of cards up to date and also adds basic current pricing info. Has CI/CD actions to handle merging and generating release notes.",
-    website: "https://99staples.com",
-    frontend: "https://github.com/denvermullets/ninetynine-staples-front-end",
-    backend: "https://github.com/denvermullets/ninetynine-staples",
-    image: "/images/animations/99staples.png",
   },
   {
     name: "Mentumm (freelance)",
