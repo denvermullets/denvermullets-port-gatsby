@@ -1,8 +1,16 @@
 export const portfolio = [
   {
+    name: "Simple Budget Control",
+    bio:
+      "A simple tool to help manage your budget paycheck to paycheck. This is based off of an automated spreadsheet I've been using for years as others have asked for it.",
+    website: "https://simplebudgetcontrol.com",
+    frontend: "https://github.com/denvermullets/simple-budget-control",
+    image: "/images/animations/simple-budget-control.png",
+  },
+  {
     name: "Basketball Timeline",
     bio:
-      "NBA Lineup visualizer uitilizing data scraped via my Ruby on Rails API to show you the starting lineups thru the season. API uses a Sidekiq for initial ingestion of data. ",
+      "NBA Lineup visualizer uitilizing data scraped via my Ruby on Rails API to show you the starting lineups thru the season. API uses a Sidekiq for initial ingestion of data.",
     website: "https://basketball-timeline.com/?team=PHO&year=2023",
     frontend: "https://github.com/denvermullets/basketball-timeline-client",
     backend: "https://github.com/denvermullets/basketball-timeline",
